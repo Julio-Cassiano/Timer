@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-color: #121214;
+    --base-color: 194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+    --text-color: #FFFFFF;
+    --ff: "Roboto", sans-serif;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+#timer span {
+    font-family: var(--ff);
+    font-size: 11rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.hide {
+    display: none;
+}
+
+#controls {
+    background-color: var(--bg-primary-light);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    width: clamp(28.1rem, 19rem + 20vw, 10rem);
+    height: clamp(8.7rem, 19rem + 15vw, 3rem);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--bg-primary-light);
+    border-radius: 0.3rem;
+}
+
+.play, .pause, .sound-on, .sound-off {
+    color: var(--primary-color);
+}
+
+button svg {
+    width: clamp(3.2rem, 4rem + 7vw, 6rem);
+    height: clamp(3.2rem, 4rem + 7vw, 6rem);
+}
+
+footer {
+    align-self: end;
+    justify-self: end;
+    padding: 3.5rem;
+}
+
+
+
+
+
